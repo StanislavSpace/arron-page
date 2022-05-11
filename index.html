@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arron - Service center</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/star-rating.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/slick-slider.js" defer></script>
+    <script src="js/timer.js" defer></script>
+    <script src="js/modal-win.js" defer></script>
+    <script src="js/sendform.js" defer></script>
+    <script src="js/scrollTo.js" defer></script>
+    <script src="js/burger-menu.js" defer></script>
+
+</head>
+
+<body>
+<!-- Header start -->
+<header class="page-header lock-padding" id="header">
+    <div class="header-container">
+        <a href="#header" class="header-logo-link"><img src="img/header-logo.svg" alt="Логотип сервисного центра" width="202" height="70"><p class="header-logo-text">Toti repara la noi</p></a>
+        <div class="header-burger">
+            <span></span>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li><a data-goto=".services-provide" href="#" class="header-nav-link">Наши услуги</a></li>
+                <li><a data-goto=".about-company" href="#" class="header-nav-link">О компании</a></li>
+                <li><a data-goto=".reviews" href="#" class="header-nav-link">Отзывы</a></li>
+                <li><a data-goto=".orders" href="#" class="header-nav-link">Выполненные заказы</a></li>
+                <li><a data-goto=".foooter-contacts" href="#" class="header-nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-location">
+            <img src="img/gps.svg" alt="Маркер местоположения" width="32" height="32">
+            <p>г. Кишинев, ул. Бэнулеску Бодони, д.33</p>
+            <a data-goto=".footer-map" class="header-nav-link" href="!#">Мы на карте</a>
+        </div>
+        <div class="header-phone">    
+        <p class="header-tel-text">069 82 77 38</p>
+        <span>/</span>
+        <p class="header-tel-text-two">079 92 77 38</p>
+        <a href="tel:+069827738" class="button btn-phone"></a>
+        </div>
+    </div>
+</header>
+<!-- Header end -->
+<main>
+<!-- Main banner start -->
+<section id="main-banner" class="main-banner">
+    <div class="wrapper">
+        <div class="main-banner-action-call">    
+            <h1 class="main-banner-title">Проблемы с Вашим устройством?</h1>
+            <p class="main-banner-description">Решаем любые проблемы! Большой склад и опытные мастера</p>
+            <button class="button btn-main-action modal-link">Бесплатная консультация</button> 
+        </div>
+        <div class="main-banner-master" >
+            <img src="img/main-master.png" alt="Мастер" width="765" height="798">
+            <div class="main-banner-images">
+                <img src="img/main-gear.svg" class="image-gear" alt="Механизм" width="85" height="85">
+                <img src="img/main-laptop.svg" class="image-laptop" alt="Ноутбук" width="51" height="51">
+                <img src="img/main-monitor.svg" class="image-monitor" alt="Монитор" width="59" height="59">
+                <img src="img/main-phone.svg" class="image-phone" alt="Телефон" width="73" height="73">
+            </div>
+            <div class="main-banner-action-timer">
+                <h2>50%</h2>
+                <img src="img/fire.svg" alt="Огонь">
+                <p class="action-timer-text">скидка на ремонт телефонов, ноутбуков и планшетов до <b>-50%</b></p>
+                <div class="timer">
+                    <p class="timer-text">Конец акции:</p>
+                    <p class="timer-time"></p>
+                </div>
+            </div>
+        </div>
+        <div class="main-banner-advantages">
+            <ul class="main-banner-advantages-list">
+                <li>
+                    <img src="img/delivery.svg" alt="Доставка курьером" width="80" height="80">
+                    <h3>Курьер  по городу</h3>
+                    <p>Выезд курьера Буюканы Чеканы, Рышкановка, центр, Ботаника.</p>
+                </li>
+                <li>
+                    <img src="img/adv-phone.svg" alt="Телефон на замену" width="80" height="80">
+                    <h3>Подменный телефон -  Бесплатно</h3>
+                    <p>Телефон взамен Бесплатно, пока ваш в ремонте</p>
+                </li>
+                <li>
+                    <img src="img/adv-help.svg" alt="" width="80" height="80">
+                    <h3>Забота о вас</h3>
+                    <p>Незначительные поломки - делаем бесплатно.</p>
+                </li>
+            </ul>
+        </div>
+        <img src="img/ellipse.svg" alt="Эллипс" class="main-banner-svg ellipse-svg" width="50" height="50">
+        <img src="img/arrows.svg" alt="Стрелки" class="main-banner-svg arrow-svg" width="89" height="13">
+        <img src="img/waves.svg" alt="Волны"  class="main-banner-svg wave-svg" width="98" height="62">
+        <img src="img/dots.svg" alt="Точки" class="main-banner-svg dots-svg" width="56" height="56">
+    </div>
+</section>
+<!-- Main banner end -->
+
+<!-- Service start -->
+<section class="service">
+    <div class="wrapper-medium">
+        
+        <ul class="service-list">
+            <h2 class="service-title" style="grid-area: title;">Мы работаем <br> с устройствами:</h2>
+            <li class="service-item" style="grid-area: apple;">
+                <img src="img/service-dots.svg" alt="Повернутые точки" class="service-svg service-dots-svg" width="78" height="78">
+                <img src="img/service-apple.png" alt="Телефон Эппл" class="service-image" width="183" height="242">
+                <img src="img/service-apple-mark.svg" alt="Логотип Эппл" class="service-mark service-apple" width="92" height="92">
+                <p class="service-item-name">Apple</p>
+                <a href="!#" class="service-link"></a>
+            </li>
+            <li class="service-item" style="grid-area: android;">
+                <img src="img/service-wave.svg" alt="Волнистые линии" class="service-svg service-wave-svg" width="98" height="62">
+                <img src="img/service-android.png" alt="Телефон Андройд" class="service-image" width="177" height="245">
+                <img src="img/service-android-mark.svg" alt="Логотип Андройд" class="service-mark service-android" width="92" height="92">
+                <p class="service-item-name service-name-android">Android</p>
+                <a href="!#" class="service-link service-link-android"></a>
+            </li>
+            <li class="service-item" style="grid-area: gadget;">
+                <img src="img/service-wave.svg" alt="Волнистые линии" class="service-svg service-wave2-svg" width="98" height="62">
+                <img src="img/service-gadgets.png" alt="Электронные часы" class="service-image" width="257" height="285">
+                <img src="img/service-ellipse.svg" alt="Эллипс серый" class="service-svg service-ellipse-gray" width="50" height="50">
+                <p class="service-item-name service-name-gadget">Гаджетами</p>
+                <a href="!#" class="service-link service-link-gadget"></a>
+            </li>
+            <li class="service-item" style="grid-area: laptop;">
+                <img src="img/service-triangle.svg" alt="Красный прозрачный треугольник" class="service-svg service-triangle-red" width="114" height="114">
+                <img src="img/service-laptop.png" alt="Ноутбук" class="service-image" width="259" height="255">
+                <img src="img/service-ellipse2.svg" alt="Эллипс жёлтый" class="service-svg service-ellipse-yellow" width="67" height="67">
+                <p class="service-item-name service-name-laptop">Ноутбуками</p>
+                <a href="!#" class="service-link service-link-laptop"></a>
+            </li>
+            <li class="service-item" style="grid-area: pc;">
+                <img src="img/service-arrows.svg" alt="Желтые стрелки" class="service-svg service-arrows-svg" width="95" height="14">
+                <img src="img/service-pc.png" alt="Персональный комьютер" class="service-image" width="230" height="231">
+                <img src="img/service-pentagon.svg" alt="Красный прозрачный пятиугольник" class="service-svg service-pentagon-svg" width="100" height="100">
+                <p class="service-item-name service-name-pc">Моноблоками и PC</p>
+                <a href="!#" class="service-link service-link-pc"></a>
+            </li>
+            <li class="service-item" style="grid-area: device;">
+                <img src="img/service-triangle2.svg" alt="Серый треугольник" class="service-svg service-triangle-gray" width="66" height="85">
+                <img src="img/service-devices.png" alt="" class="service-image" width="280" height="279">
+                <img src="img/service-dots2.svg" alt="" class="service-svg service-dots2-svg" width="56" height="56">
+                <p class="service-item-name service-name-devices">Другими устройствами</p>
+                <a href="!#" class="service-link service-link-devices"></a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- Service end -->
+
+<!-- About company start -->
+<section class="about-company" id="about-company">
+    <div class="wrapper-medium">
+        <div class="about-info">
+        <h2 class="about-company-title">О компании Arron</h2>
+        <p class="about-company-description">Узнайте о нашей компании больше из видео за 1 минуту.</p>
+        <button class="button btn-about">Смотреть</button>
+        </div>
+        <div class="about-advantages">
+        <ul class="about-list">
+            <li class="about-list-item">
+                <img src="img/delivery.svg" alt="Машина" width="80" height="80">
+                <h3 class="about-list-title">Выезжаем в любую точку Кишинева</h3>
+                <p class="about-list-description">Выезд курьера Буюканы Чеканы, Рышкановка, центр, Ботаника.</p>
+            </li>
+            <li class="about-list-item">
+                <img src="img/clocks.svg" alt="Часы" width="80" height="80">
+                <h3 class="about-list-title">Работы от 30 минут</h3>
+                <p class="about-list-description">Время работы или настройки занимает<br>
+                    от 30 минут до несколько часов.</p>
+            </li>
+            <li class="about-list-item">
+                <img src="img/payment.svg" alt="Карточка" width="80" height="80">
+                <h3 class="about-list-title">Удобный способ оплаты</h3>
+                <p class="about-list-description">Оплата наличными или по<br> перечеслению компаниям.</p>
+            </li>
+            <li class="about-list-item">
+                <img src="img/secure.svg" alt="Щит" width="80" height="80">
+                <h3 class="about-list-title">Гарантия на все выполненые услуги</h3>
+                <p class="about-list-description">Запчасти, фотографии и сообщения<br> под Вашим контролем. После работ инженер отдаст Вам старые запчасти.</p>
+            </li>
+        </ul>
+        </div>
+    </div>
+</section>
+<!-- About company end -->
+
+<!-- Reviews start -->
+<section class="reviews" id="reviews">
+    <div class="wrapper-medium">
+        <h2 class="reviews-title">Отзывы счастливых клиентов</h2>
+        <div class="reviews-slider">
+                <ul class="reviews-slider-list">
+                    <li class="reviews-slider-item"><img src="img/client1.png" alt="Клиент" width="302" height="251"></li>
+                    <li class="reviews-slider-item"><img src="img/client2.png" alt="Клиент" width="302" height="251"></li>
+                    <li class="reviews-slider-item"><img src="img/client3.png" alt="Клиент" width="302" height="251"></li>
+                    <li class="reviews-slider-item"><img src="img/client4.png" alt="Клиент" width="302" height="251"></li>
+                    <li class="reviews-slider-item"><img src="img/client1.png" alt="Клиент" width="302" height="251"></li>
+                </ul>
+        </div>
+  </div>
+</section>
+<!-- Reviews end -->
+
+<!-- Orders start -->
+<section class="orders" id="orders">
+ <div class="wrapper-medium">
+     <h2 class="orders-title">Выполненные заказы</h2>
+     <div class="orders-slider">
+             <ul class="orders-slider-list">
+                 <li class="slider-element"><img src="img/orders1.png" alt="" width="412" height="401"></li>
+                 <li class="slider-element"><img src="img/orders2.png" alt="" width="412" height="401"></li>
+                 <li class="silder-element"><img src="img/orders3.png" alt="" width="412" height="401"></li>
+                 <li class="silder-element"><img src="img/orders3.png" alt="" width="412" height="401"></li>
+                 <li class="silder-element"><img src="img/orders3.png" alt="" width="412" height="401"></li>
+             </ul>
+     </div>
+</div>
+</section>
+<!-- Orders end -->
+   
+<!-- Services provide start -->
+<section class="services-provide" id="service-provide">
+    <div class="wrapper-medium">
+        <div class="services-provide-info">
+            <h2 class="services-provide-title">Что делать если ноутбук или телефон медлено работает</h2>
+            <p class="services-provide-description">Получите чек лист - Что делать, если ноутбук или телефон грузится</p>
+            <a href="libs/cheklist.txt" download="" class="button btn-checklist">Получить чек лист</a>
+        </div>
+        <div class="services-provide-info2">
+            <h2 class="services-provide-title">наши услуги</h2>
+            <ul class="services-provide-list">
+                <li><p>ремонт ноутбуков</p></li>
+                <li><p>ремонт смартфонов</p></li>
+                <li><p>заправка и ремонт<br> картриджей</p></li>
+                <li><p>установка СНПЧ</p></li>
+                <li><p>ремонт компьютеров</p></li>
+                <li><p>ремонт моноблоков</p></li>
+                <li><p>ремонт планшетов</p></li>
+                <li><p>ремонт КПК</p></li>
+                <li><p>ремонт мониторов</p></li>
+                <li><p>ремонт принтеров</p></li>
+                <li><p>ремонт роутеров</p></li>
+                <li><p>восстановление жестких дисков</p></li>
+                <li><p>компьютерная помощь<br> и IT аутсорсинги др.</p></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Services small end -->
+
+<!-- Gifts slider start -->
+<section class="gifts">
+    <div class="wrapper-medium">
+        <h2 class="gifts-title">На каждый ремонт гарантировано подарок на ваш выбор :</h2>
+        <div class="gifts-slider">
+                <ul class="gifts-slider-list">
+                    <li class="gifts-slider-item"><img src="img/cases.png" alt="Чехлы" width="422" height="435" class="gifts-slider-image"></li>
+                    <li class="gifts-slider-item"><img src="img/glasses.png" alt="Защитные стекла" width="422" height="425" class="gifts-slider-image"></li>
+                    <li class="gifts-slider-item"><img src="img/cables.png" alt="Кабели" width="422" height="424" class="gifts-slider-image"></li>
+                    <li class="gifts-slider-item"><img src="img/holders.png" alt="Держатели" width="422" height="425" class="gifts-slider-image"></li>
+                    <li class="gifts-slider-item"><img src="img/chargers.png" alt="Зарядки" width="422" height="424" class="gifts-slider-image"></li>
+                    <li class="gifts-slider-item"><img src="img/headphones.png" alt="Наушники" width="422" height="424" class="gifts-slider-image"></li>
+                    <li class="gifts-slider-item"><img src="img/other-accessories.png" alt="Другие аксессуары" width="422" height="424" class="gifts-slider-image"></li>
+                </ul> 
+        </div>
+    </div>
+</section>
+<!-- Gifts slider end -->
+
+<!-- Company-info start -->
+<section class="company-info">
+    <div class="wrapper-medium">
+        <div class="company-info-title">
+            <p class="company-info-description">В нашей компании работают лучшие специалисты, 
+            которые прекрасно разбираются в современных технологиях и имеют более 3-х лет опыта работы.</p>
+        </div>
+        <div class="company-info-text" style="float: left;">
+            <p class="company-info-subdescription">
+            За счет этого мы гарантируем устранение<br> любых неполадок и 
+            предоставляем<br> гарантию на все выполненные работы.
+            <br>
+            <br>
+            Мы поможем не только восстановить работоспособность техники, 
+            но и<br> подскажем, как избежать возникновения подобных поломок в 
+            будущем.
+            <br>
+            <br>
+            Квалифицированная консультация специалиста поможет безопасно 
+            пользоваться компьютером. В нашем штате работают опытные специалисты.
+            </p>
+        </div>
+        <div class="company-info-slider">
+            <ul class="company-info-slider-list">
+                <li class="company-info-slider-item"><img src="img/master-image.jpg" alt="мастер" width="635" height="480"></li>
+                <li class="company-info-slider-item"><img src="img/master-image.jpg" alt="мастер" width="635" height="480"></li>
+                <li class="company-info-slider-item"><img src="img/master-image.jpg" alt="мастер" width="635" height="480"></li>
+                <li class="company-info-slider-item"><img src="img/master-image.jpg" alt="мастер" width="635" height="480"></li>
+                <li class="company-info-slider-item"><img src="img/master-image.jpg" alt="мастер" width="635" height="480"></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Company-info end -->
+ 
+<!-- Lid form start -->
+<section class="lid-form-section">
+    <div class="wrapper-medium">
+        <h2 class="lid-form-title-percent">50%</h2>
+      
+        <h2 class="lid-form-title">Записаться на диагностику<br> 
+            в <span>удобное</span> вам время</h2>
+        <form class="lid-form" action="/keksby-mail" method="post">
+            <div class="lid-form-group lid-form-group-left">
+              <input type="text" name="day" id="day" placeholder="День" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}">
+            </div>
+            <div class="lid-form-group lid-form-group-right">
+              <input type="text" name="time" id="time" placeholder="Время" pattern="[0-9]{5}">
+            </div>
+            <div class="lid-form-group">
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+            </div>
+            <input type="submit" class="button lid-form-button" value="Записаться">
+          </form>
+    </div>
+</section>
+<!-- Lid form end -->
+</main>
+    
+<footer class="page-footer">
+    <div class="wrapper-medium">
+        <h2 class="footer-title">наши контакты</h2>
+        <div class="footer-slider">
+            <ul class="footer-slider-list">
+                <li class="footer-slider-item"><img src="img/footer-master.jpg" alt="мастер" width="594" height="578"></li>
+                <li class="footer-slider-item"><img src="img/footer-master.jpg" alt="мастер" width="594" height="578"></li>
+                <li class="footer-slider-item"><img src="img/footer-master.jpg" alt="мастер" width="594" height="578"></li>
+                <li class="footer-slider-item"><img src="img/footer-master.jpg" alt="мастер" width="594" height="578"></li>
+                <li class="footer-slider-item"><img src="img/footer-master.jpg" alt="мастер" width="594" height="578"></li>
+            </ul>
+        </div>
+        
+        <div class="footer-video">
+            <img src="img/footer-video.jpg" alt="видео" width="594" height="578">
+        </div>
+
+        <div class="foooter-contacts" id="contacts">
+            <div class="footer-phone">
+                <img src="img/footer-phone-call.svg" alt="Телефонная трубка" class="footer-phone-image" width="56" height="56">
+                <a href="tel:+069827738">069 82 77 38</a>
+                <span>/</span>
+                <a href="tel:+079927738">079 92 77 38</a>
+            </div>
+            
+            <div class="footer-email">
+                <img src="img/footer-email.svg" alt="Письмо" width="56" height="56">
+                <a href="mailto:info@arron.md">info@arron.md</a> 
+            </div>
+
+            <div class="footer-location">
+                <img src="img/footer-gps.svg" alt="Маркер местоположения" width="56" height="56">
+                <p>г. Кишинев, ул. Бэнулеску Бодони, д.33</p>
+            </div>
+
+            <div class="footer-rating-form">
+               <div class="form-label">Рейтинг сервиса</div>
+                <div data-ajax="true" class="rating rating-set">
+                    <div class="rating-body">
+                        <div class="rating-active"></div>
+                        <div class="rating-items">
+                            <input type="radio" class="rating-item" value="1" name="rating">
+                            <input type="radio" class="rating-item" value="2" name="rating">
+                            <input type="radio" class="rating-item" value="3" name="rating">
+                            <input type="radio" class="rating-item" value="4" name="rating">
+                            <input type="radio" class="rating-item" value="5" name="rating">
+                        </div>
+                    </div>
+                    <div class="rating-value">3.7</div>
+                </div>
+            </div>
+               
+           <div class="footer-social">
+               <h3 class="footer-social-title">Мы в соцсетях</h3>
+               <ul class="footer-social-list">
+                   <li class="footer-social-item"><a href="!#" class="footer-social-instagram"><img src="img/footer-inst.svg" alt="Инстаграм" width="21" height="21" style="display: block; margin: 0 auto; margin-top: 6px;"></a></li>
+                   <li class="footer-social-item"><a href="!#" class="footer-social-facebook"><img src="img/footer-fb.svg" alt="Фэйсбук" width="11" height="22" style="display: block; margin: 0 auto; margin-top: 7px;"></a></li>
+                   <li class="footer-social-item"><a href="!#" class="footer-social-tiktok"><img src="img/footer-tkt.svg" alt="Тикток" width="17" height="20" style="display: block; margin: 0 auto; margin-top: 6px;"></a></li>
+                   <li class="footer-social-item"><a href="!#" class="footer-social-youtube"><img src="img/footer-yt.svg" alt="Ютуб" width="20" height="14" style="display: block; margin: 0 auto; margin-top: 9px;"></a></li>
+               </ul>
+           </div> 
+            
+           <div class="footer-map">
+            <img src="img/footer-map.jpg" alt="Карта" width="1920" height="750">
+        </div> 
+        </div>
+    </div>
+</footer>
+
+<!-- Modal window start-->
+<div id="modal" class="modal">
+    <div class="modal-body">
+        <div class="modal-content">
+            <a href="#" class="modal-close close-modal"></a>
+            <h3 class="modal-title">
+                Оставьте заявку на <span>бесплатную</span> консультацию
+            </h3>
+            <form action="#" id="form" class="form modal-form">
+                <input id="formName" type="text" name="name" class="input modal-input _req" placeholder="Имя">
+                <input id="formTel" type="tel" name="mail" class="input modal-input _req _phone" placeholder="Телефон">
+                <div class="modal-buttons">
+                    <button type="submit" class="button modal-button">
+                        Получить консультацию
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Modal window end-->
+   
+<!-- тест секция Service
+    <section>
+        <div class="wrapper-medium">
+            <div class="container">
+                <div class="title">
+                    <h2 class="service-title">Мы работаем <br> с устройствами:</h2>
+                </div>
+                <div class="apple">
+                    <img src="img/service-apple.png" class="apple-img" alt="Телефон Эппл" width="183" height="242" style="position: relative;">
+                    <p class="container-name apple-txt">Apple</p>
+                    <a href="!#"></a>
+                </div>
+                <div class="android"></div>
+                <div class="laptop"></div>
+                <div class="pc"></div>
+                <div class="device"></div>
+                <div class="gadget"></div>
+              </div>
+        </div>
+    </section>
+-->
+</body>
+</html>
